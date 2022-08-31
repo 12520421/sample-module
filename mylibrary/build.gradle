@@ -8,9 +8,10 @@ android {
     compileSdk 32
 
     defaultConfig {
-        minSdk 23
-        targetSdk 32
-
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "0.0.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -49,7 +50,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.12520421'
                 artifactId = 'sample-module'
-                version = '0.0.4'
+                version = '0.0.5'
             }
         }
     }
