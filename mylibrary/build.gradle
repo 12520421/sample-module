@@ -31,9 +31,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //implementation fileTree(dir: "libs", include: ["*.jar"])
 
-    implementation files('libs/VTS-SDK-6.2.2.aar')
+    //implementation files('libs/VTS-SDK-6.2.2.aar')
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
@@ -49,7 +49,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.12520421'
                 artifactId = 'sample-module'
-                version = '0.0.3'
+                version = '0.0.4'
             }
         }
     }
